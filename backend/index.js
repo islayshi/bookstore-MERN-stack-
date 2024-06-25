@@ -13,13 +13,13 @@ const app = express();
 app.use(cors());
 
 // Option 2: allow custom origins (better way)
-app.use(
+/*app.use(
     cors({
         origin: 'http://localhost:3000',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type'],
     })
-);
+); */
 
 // Route for new saved book 
 app.get("/", (request, response) => {
